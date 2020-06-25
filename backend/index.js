@@ -97,9 +97,11 @@ server.post(
   (req, res) => {
     const { title, owner } = req.body;
 
-    projects.push({ id: uuid(), title, owner });
+    const project = { id: uuid(), title, owner };
 
-    return res.json(projects);
+    projects.push(project);
+
+    return res.json(project);
   }
 );
 
