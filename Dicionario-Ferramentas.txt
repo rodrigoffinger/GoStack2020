@@ -1,0 +1,67 @@
+Ferramentas, bibliotecas e serviços usadas no bootcamp
+
+* express > Framework para desenvolvimento de apps web e api
+* Nodemon > Reload automático da aplicação durante o desenvolvimento
+* Sucrase > Compilador de JS. Alternativa mais performática em relação ao babel
+* eslint > Ferramenta de análise de código, para ajudar a manter um padrão de estilo de código
+* prettier > Formatador de código. Funciona em conjunto com o eslint,
+sendo possível configurá-lo para formatar o código e aplicar o padrão definido no eslint
+sempre que o arquivo for salvo.
+* Sequelize > ORM (Object-Relational Mapper), compatível com diversos bancos MySQL
+* mysql2 > Contexão com banco de dados MySQL
+* jsonwebtoken > Para geração de jwt para autenticação
+* bcryptjs > Para criptografar senhas antes de armazená-las
+* yup > Para validar schema de um objeto de forma declarativa
+* multer > Para upload de arquivos
+* mongoose > Conexão com banco de dados Mongo
+* Atlas > serviço de hospedagem de bancos mongo gratuito
+* nodemailer > Envio de e-mails
+* mailtrap > Serviço para envio de e-mails em ambiente dev
+* handlebars > Templates html
+* express-handlebars > Integração de templates handlebars com o express
+* nodemailer-express-handlebars > Integração de templates handlebars com o express
+* redis > banco de dados chave-valor em memória
+* redislabs > serviço de hospedagem de bancos redis gratuito
+* bee-queue > Background jobs no node (para filas de tarefas, etc)
+* Sentry.IO > Tratamento de exceções
+* express-async-errors > Para o express conseguir captar erros de métodos assincronos
+* youch > Tratamento de mensagens de erro
+* dotenv > Para uso de variáveis de ambiente
+
+* @babel/core > Compilador de JS. Permite escrever JS com sua sintaxe mais recente,
+compilando o código para uma versão mais antiga e onipresente ao executar
+** @babel/preset-env > Altera funcionalidades do JS que o navegador não entende (funcionalidades mais recentes)
+** @babel/preset-react > Mesmo objetivo do preset-env, voltado à funcionalidades do react (jsx, etc)
+** @babel/plugin-proposal-class-properties >
+* babel-loader >
+* style-loader > Permite importar css dentro de componentes
+* css-loader > Permite importar arquivos css dentro de outro arquivo css
+* file-loader > Permite importar arquivos diversos, como imagens
+* webpack webpack-cli >
+* webpack-dev-server > Permite rodar o webpack em ambiente de desenvolvimento, compilando e recarregando automaticamente
+os arquivos após alterações.
+* react > Dependência básica do React, usada tanto pelo web quanto mobile
+* react-dom > Dependência web do React
+* prop-types >
+
+* yarn create react-app modulo05 > Cria um projeto com Webpack, babel e etc configurados
+** Ao usar este "scaffolding", o webpack e o babel vem configurados através do pacote react-scripts
+** prettier eslint-config-prettier eslint-plugin-prettier babel-eslint
+* react-router-dom > Roteamento de páginas no front-end
+* styled-components > Permite criar tags/componentes estilizados
+* react-icons > pacote de ícones
+* axios > lib para requisições à APIs
+* prop-types
+
+
+* Reactotron > Ferramenta de debug para react native e react
+** adb reverse tcp:3333 tcp:3333 (para funcionar no emulador e android via usb)
+* reactotron-react-native
+* react-navigation https://reactnavigation.org/docs/en/getting-started.html
+* react-native-vector-icons
+* @react-native-community/async-storage
+
+Dicas
+yarn install --network-timeout 1000000 (quando em uma conexão lenta)
+react-native run-android
+cd android && ./gradlew clean
