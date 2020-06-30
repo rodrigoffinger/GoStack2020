@@ -65,3 +65,9 @@ Dicas
 yarn install --network-timeout 1000000 (quando em uma conexão lenta)
 react-native run-android
 cd android && ./gradlew clean
+
+Aviso: Ao utilizar o Docker Toolbox, para acessar serviços como o Postgres,
+Redis, Mongo, etc, criados a partir do Docker, utilizar o endereço 
+`192.168.99.100` ao invés de `localhost`.
+
+docker run --name gostack_postgres -e POSTGRES_PASSWORD=root -p 5432:5432 -d postgres

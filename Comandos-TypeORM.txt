@@ -1,0 +1,3 @@
+yarn typeorm migration:create -n NomeDaMigration
+yarn typeorm migration:run
+yarn typeorm migration:revert
