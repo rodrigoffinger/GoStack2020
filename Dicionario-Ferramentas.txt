@@ -72,4 +72,5 @@ Redis, Mongo, etc, criados a partir do Docker, utilizar o endereço
 
 docker run --name gostack_postgres -e POSTGRES_PASSWORD=root -p 5432:5432 -d postgres
 docker run --name gostack_mongodb -p 27017:27017 -d mongo
+docker run --name gostack_redis -p 6379:6379 -d redis:alpine
 docker-machine ip
